@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    .Main1{
+        transition: all 1s ease-in-out;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+    .Sub11{
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        z-index: 1;
+        width: 30vw;
+        height: 70vh;
+        position: absolute;
+        top: 15vh;
+        left: 35vw;
+    }
+    .Sub11 img{
+        width: 100%;
+        height: 100%;
+    }
+    .Main1:hover .Sub11{
+        opacity: 1;
+        left: -6vw;
+    }
+    .Sub13{
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        z-index: 1;
+        width: 30vw;
+        height: 70vh;
+        position: absolute;
+        top: 15vh;
+        left: 35vw;
+    }
+    .Sub13 img{
+        width: 100%;
+        height: 100%;
+    }
+    .Main1:hover .Sub13{
+        opacity: 1;
+        left: 76vw;
+    }
+    .Sub12{
+        transition: all 1s ease-in-out;
+        opacity: 0.5;
+        width: 70vw;
+        height: 40vh;
+        position: absolute;
+        top: 30vh;
+        left: 15vw;
+    }
+    .Sub12 img{
+        width: 100%;
+        height: 100%;
+    }
+    .Main1:hover .Sub12{
+        opacity: 1;
+    }
+    .Main1:hover{
+        background-color: darkred;
+    }
+</style>
+<body>
+    <div class="Main1">
+        <div class="Sub11">
+            <img src="https://pngfre.com/wp-content/uploads/coca-cola.png" alt="">
+        </div>
+        <div class="Sub13">
+            <img src="https://pngfre.com/wp-content/uploads/coca-cola.png" alt="">
+        </div>
+        <div class="Sub12">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
